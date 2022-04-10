@@ -34,7 +34,7 @@ rate = []
 facility = []
 category = []
 # Scrape hotel info, page by page
-for hotel in hotel_url:
+for hotel in hotel_url[:5]:
     driver.get(hotel)
     time.sleep(2) # Expect delay on loading page
     hotel_name.append(driver.find_element(By.CSS_SELECTOR, 'h1.c-1wj1luj').text)
@@ -50,6 +50,8 @@ hotel_df = pd.DataFrame({
     'facility': facility,
     'category': category
 })
+
+hotel_df.to_csv('OYO-hotel-Yogyakarta.csv')
 
 driver.close()
 driver.quit()
