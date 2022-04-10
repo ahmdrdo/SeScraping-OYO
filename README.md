@@ -19,7 +19,7 @@ In this project, I use Selenium to scrape/extract the info of hotels located in 
 ## Processes
 Broadly speaking, the following process occurs when the script (scrapeOyo.py) is executed.
 
-<img src='assets/Processes.png' alt='Processes'>
+<img src='assets/Processes.png' alt='Processes' width='1019'>
 <img src='assets/execution_script.gif' alt='Script running'>
 
 ## Result
