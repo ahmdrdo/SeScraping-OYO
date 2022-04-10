@@ -2,3 +2,7 @@
 \.venv
 \venv
 \env
+
+
+# Ignore files
+hotel_url.csv
