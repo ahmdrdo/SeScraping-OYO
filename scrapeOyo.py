@@ -1,6 +1,4 @@
-from unicodedata import category
 import pandas as pd
-import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
@@ -57,7 +55,7 @@ hotel_df = pd.DataFrame({
     'category': category
 })
 
-hotel_df.to_csv('OYO-hotel-Yogyakarta.csv')
+hotel_df.to_csv('OYO-hotel-Yogyakarta.csv', index=False)
 
 driver.close()
 driver.quit()
